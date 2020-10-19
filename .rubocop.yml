@@ -1,0 +1,13 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: disable
+  Include:
+    - app/controllers/api/v2/**.rb
+    - app/services/**.rb
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30

@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: json_stock_development
+  host: 127.0.0.1
+
+test:
+  <<: *default
+  database: json_stock_test
+
+production:
+  <<: *default
+  database: json_stock_production
+  username: json_stock
+  password: <%= ENV['JSON_STOCK_DATABASE_PASSWORD'] %>

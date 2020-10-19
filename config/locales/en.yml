@@ -1,0 +1,17 @@
+en:
+  stock:
+    successful_create: 'Successful created.'
+    successful_delete: 'Stock successful deleted.'
+    successful_update: 'Stock successful updated.'
+    error:
+      create: 'No Stock created.'
+      no_found: 'Can not find stock.'
+      occurred: 'Error occurred: %{errors}'
+      no_update: 'Nothing to update.'
+  bearer:
+    error:
+      not_found: 'Can not find Bearer.'
+
+  errors:
+    empty_params: 'Params require.'
+    something_went_wrong: 'Something went wrong.'
